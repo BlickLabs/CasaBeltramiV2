@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+body{
+	margin:0px;
+	min-width:1000px;
+}
+header{
+	margin:auto;
+	padding:10px;
+	font-size:30px;
+	width:500px;
+	text-align:center;
+	margin-top:20px;
+	color:#FFF;
+	background-color:#4670DB;
+	margin-bottom:20px;
+	box-shadow:1px 1px 5px #555555;
+	text-shadow:1px 1px 2px #555555;
+}
+section{
+	width:520px;
+	margin:auto;
+	height:auto;
+	margin-bottom:20px;
+	text-align:center;
+}
+section table{
+	width:100%;
+}
+section input[type=file]{
+	width:100%;
+	font-size:14px;
+	cursor:pointer;
+}
+section input[type=submit]{
+	margin-top:10px;
+	width:100%;
+	font-size:14px;
+	cursor:pointer;
+	color:#F7F7F7;
+	background-color:#4670DB;
+	padding-top:5px;
+	padding-bottom:5px;
+	border:1px solid #CACACA;
+}
+section input[type=submit]:hover{
+	background-color:#1C62E3;
+}
+section textarea{
+	resize:none;
+	width:96%;
+	height:50px;
+	margin-top:10px;
+	font-size:14px;
+	outline:none;
+	padding:10px;
+}
+section fieldset{
+	margin-top:20px;
+	border:1px solid #C0C0C0;
+}
+section fieldset legend{
+	color:#4670DB;
+}
+.fotos{
+	position:relative;
+	padding:0px;
+}
+.fotos li{
+	float:left;
+	list-style:none;
+	width:180px;
+	height:auto;
+	margin-top:30px;
+	margin-left:35px;
+}
+.img-subida{
+	width:100%;
+	cursor:pointer;
+}
+.cargando{
+	margin-top:10px;
+	width:50px;
+	height:50px;
+	display:none;
+}

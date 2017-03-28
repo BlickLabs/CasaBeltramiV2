@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en" class="general-html">
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<title>Casa Beltrami | Cotiza</title>
+    	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="css/custom.css" type="text/css">
+		 <!-- Font Icons -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css" />
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css" />
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css" />
+		<style>
+			input::-webkit-outer-spin-button,
+			input::-webkit-inner-spin-button {
+			    -webkit-appearance: none;
+			    margin: 0;
+			}
+		</style>
+</head>
+<body id="cotiza" data-spy="scroll" data-target=".salones-img-links">
+		
+<div class="navbar-wrapper">
+    <!--<div class="container">-->
+      <nav class="navbar navbar-default navbar-static-top ">
+        <!--<div class="container col-md-8 col-md-offset-2">-->
+        <div class="navbar-header">
+          <button id="navbar-trigger" type="button" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar">
+          <div>
+            <img src="img/icons/Logo-no-text.png" alt="Casa Beltrami Logo" id="navbar-logo">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Casa Beltrami</a></li>
+              <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+              <li><a href="diseno-de-eventos.html">Diseño de Eventos</a></li>
+              <li><a href="renta-de-salones.html">Renta de Salones</a></a></li>
+              <li><a href="galeria-de-eventos.html">galería de eventos</a></li>
+              <li class="active"><a href="cotiza.html">cotiza</a></li>
+            </ul>
+            <hr class="desktop-hidden">
+            <div class="desktop-hidden">
+              <span class="siguenos-span">Siguenos en: </span>
+              <a href="https://www.facebook.com/casabeltrami/"><i class="fa fa-facebook-square white-text" aria-hidden="true"></i></a>
+              <a href="http://instagram.com/casabeltrami"><i class="fa fa-instagram white-text" aria-hidden="true"></i></a>
+              <span class="contactanos-span white-text">CONTÁCTANOS</span>
+              <div class="contact-info">
+                <span class="small-text">
+                2291 307456 y 57</span>
+                <img src="img/icons/HomePage_icons-11.png" alt="contact icon"></img>
+              </div>
+              <div class="contact-info">
+                <span class="small-text">info@casabeltrami.com</span>
+                <img class="message-icon" src="img/icons/HomePage_icons-12.png" alt="contact icon"></img>
+              </div>
+              <div class="contact-info">
+                <span class="small-text">Boulevard Miguel Alemán #875 esq. <br>Nicaragua. Boca del Río, Veracruz.</span>
+                <img src="img/icons/HomePage_icons-13.png" alt="contact icon"></img>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!--</div> <!-- .container -->
+  </div> <!-- .navbar-wrapper -->
+ <div id="content-wrapper" class="general">
+   <div class="row somos-content">
+		<div class="container col-md-8 somos-text">
+				<h3>cotiza<br><span>Llena los siguientes campos para solicitar información</span></h3>
+				<hr>
+		</div>
+    </div>
+   	<div class="cotiza-content" style="padding-top: 20px;">
+   		<form  id="formid" method="post" >
+   			<div class="row no-padd-right">
+   				<div class="form-group col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-2">
+   					<input type="text" name="name"  id="name" class="form-control MontserratL form_cotiza"  placeholder="Nombre">
+   				</div>
+   				<div class="form-group col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
+   					<input type="email" name="email" id="email" class="form-control MontserratL form_cotiza" placeholder="Correo Electrónico">
+   				</div>
+   			</div>
+   			<div class="row no-padd-right"> 
+   				<div class="form-group col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-2">
+   				  <input type="number" name="phone_number"  id="phone_number" class="form-control MontserratL form_cotiza"  placeholder="Teléfono">
+   				</div>
+   					<div class="form-group col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
+   						<select class="selectpicker col-md-12 col-xs-12 MontserratL combo_cotiza" id="type_event" name="type_event">
+   							<option value="" disabled selected>Tipo de evento</option>
+   							<option value="Bautizo">Bautizo</option>
+   							<option value="Baby Shower">Baby Shower</option>
+   							<option value="Boda">Boda</option>
+   							<option value="Comunión">Comunión</option>
+   							<option value="Iglesia">Iglesia</option>
+   							<option value="Despedida de soltera">Despedida de soltera</option>
+   							<option value="Evento empresarial">Evento empresarial</option>
+   							<option value="Fiesta infantil">Fiesta infantil</option>
+   							<option value="Fiesta privada">Fiesta privada</option>
+   							<option value="Graduación">Graduación</option>
+   							<option value="XV años">XV años</option>
+   							<option value="Otro">Otro</option>
+   						</select>
+   					</div>
+   				</div>
+   				<div class="row no-padd-right">
+   					<div class="form-group col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-2">
+   					<label class="event-title-date MontserratL nineteen grey texto_fecha" style="opacity: 0.6">Fecha del evento:</label>
+   					</div>
+   				</div>
+   				<div class="form-group col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-2">
+   					<div id="datepicker" data-date="4/06/2016" class="MontserratL date-outer-border center-block">
+   					</div>
+   				</div>
+   				<input type="hidden" id="date_event" name="date_event">
+   				<div class="row no-padd-right">    
+   					<div class="form-group col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0 select-no-padding-left second-div">
+   						<select class="selectpicker col-md-12 col-xs-12 MontserratL margin-select combo_cotiza2" id="service" name="service" title="Servicio que Solicitas">
+   							<option value="" disabled="true" selected="selected">Tipo de servicio que solicitas</option>
+   							<option value="Renta de Salon Lincanto">Renta de Salón L'incanto</option>
+   							<option value="Renta de Salon Farfala">Renta de Salón Farfala</option>
+   							<option value="Renta de Salon Bambinos">Renta de Salón Bambinos</option>
+   							<option value="Servicio de decoracion">Servicio de decoración</option>
+   							<option value="Diseno de evento completo">Diseño de evento completo</option>
+   							<option value="Otro">Otro</option>
+   						</select>
+   					<div class="form-group">
+                     <input type="number" name="persons" id="persons" class="form-control MontserratL form_cotiza2" placeholder="Número de personas">
+   					</div>
+   					<div class="form-group">
+   						<textarea name="message" id="message" class="form-control MontserratL no-resize form_cotiza2" placeholder="Cuéntanos más a detalle en qué te podemos ayudar. (Ej. Número de invitados, tipo de servicio, etc.)" rows="6" cols="4"></textarea>
+   					</div>
+   				</div>
+   			</div>  
+   			<div class="row no-padd-right">
+   				<button class="btn btn-default cotizaBtn">Enviar</button>
+   				<div id="ok" class="col-md-6 col-md-offset-3 MontserratL succes-alert"></div>
+   			</div>                                                        
+   		</form>
+   	</div>
+   </div>
+		<footer>
+			<div class="container">
+				<div class="">
+					<div class="col-md-2 footer-quote">
+						<p>¿Te interesa tener más información para tu evento?</p>
+						<a href="cotiza.html" class="btn btn-default btn-lg">Cotiza</a>
+						<p><span class="follow">Siguenos en:</span>
+						<a href="https://www.facebook.com/casabeltrami/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a> <a href="http://instagram.com/casabeltrami"><i class="fa fa-instagram" aria-hidden="true"></i></a> </p>
+					</div>
+					
+					<div class="col-md-2 footer-logo-container">
+						<div class="footer-logo">
+							<img class="" src="img/icons/HomePage_icons-08.png" alt="casa beltrami logo"></img>
+							<p>&copy; Casa Beltrami 2016<br>Todos los derechos reservados</p>
+						</div>
+					</div>
+					
+					
+					<div class="col-md-4 footer-contact">
+						
+						<div class="row"><p class="contact-title">CONTÁCTANOS</p></div>
+						
+						<div>
+							<div class="col-xs-10"><p>+ 2291 307780 / <span>2291 307456 y 57</p></div>
+							<div class="col-xs-1 phone-icon"><img class="footer-contact-img" src="img/icons/HomePage_icons-11.png" alt="contact icon"></img></div>
+						</div>
+						
+						<div>
+							<div class="col-xs-10">info@casabeltrami.com</p></div>
+							<div class="col-xs-1 message-icon"><img class="footer-contact-img" src="img/icons/HomePage_icons-12.png" alt="contact icon"></img></div>
+						</div>
+						
+						<div>
+							<div class="col-xs-10 contact-location"><span>Boulevard Miguel Alemán #875 esq. <br>Nicaragua. Boca del Río, Veracruz.</span></p></div>
+							<div class="col-xs-1 house-icon"><img class="footer-contact-img" src="img/icons/HomePage_icons-13.png" alt="contact icon"></img></div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</footer>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" ></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.min.js"></script>
+		<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script> 
+	 <script>
+		$(document).ready(function(){
+			function getUrlVars() {
+			    var vars = {};
+			    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,    
+			    function(m,key,value) {
+			      vars[key] = value;
+			    });
+			    return vars;
+			 }
+			 var partyRoom = getUrlVars()["room"];
+			 if (partyRoom) {
+			 	if (partyRoom == 'lincanto') {
+			 		$('#service').val('Renta de Salon Lincanto');
+			 	} else if (partyRoom == 'farfala') {
+			 		$('#service').val('Renta de Salon Farfala');
+			 	} else if (partyRoom == 'bambinos') {
+			 		$('#service').val('Renta de Salon Bambinos');
+			 	}
+			 }
+				$(function() {
+					$('a[href*="#"]:not([href="#"])').click(function() {
+						if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+							var target = $(this.hash);
+							target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+							if (target.length) {
+								$('html, body').animate({
+									scrollTop: target.offset().top
+								}, 2000);
+								return false;
+							}
+						}
+					});
+				});
+				$("#formid").validate({
+					rules: {
+						name: { required: true, minlength: 2},
+						email: { required:true, email: true},
+						phone_number: { required:true},
+						date_event:{required:false},
+						type_event:{required:false},
+						service:{required:false},
+						persons: { required:false, minlength: 1},
+						message: { required:false, minlength: 2 }
+					},
+					messages: {
+						name: "Debe introducir su nombre.",
+						email : "Debe introducir un email válido.",
+						phone_number : "El número de teléfono introducido no es correcto.",
+						date_event : "Debes seleccionar una opcion",
+						type_event : "Debes seleccionar una opcion",
+						service : "Debes seleccionar una opcion",
+						persons : "El campo Personas es obligatorio.",
+						message : "El campo Mensaje es obligatorio.",
+					},
+					submitHandler: function(form){
+						var dataString = 'name='+$('#name').val()+'&email='+$('#email').val()+'&phone_number='+$('#phone_number').val()+
+										'&date_event='+$('#date_event').val()+ '&type_event='+$('#type_event').val()+ '&service='+$('#service').val()+
+										 '&persons='+$('#persons').val()+ '&persons='+$('#persons').val() + '&details=' + $('#message').val();
+						$.ajax({
+								type: "POST",
+								url:"model/contacto_mail.php",
+								data: dataString,
+								success: function(data){
+										$("#ok").html(data);
+										$("#ok").show();
+										$('.send-btn').hide();
+										document.getElementById('formid').reset();
+								}
+						});
+					}
+				});
+				$.fn.datepicker.dates['en'] = {
+							days: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sabado"],
+							daysShort: ["Dom", "Lun", "Mar", "Mier", "Jue", "Vie", "Sab"],
+							daysMin: ["D", "L", "M", "M", "J", "V", "S"],
+							months: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+							monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+							today: "Hoy",
+							clear: "Limpiar",
+							format: "mm/dd/yyyy",
+							titleFormat: "MM yyyy", /* Leverages same syntax as 'format' */
+							weekStart: 1
+					};
+				$('#datepicker').datepicker({
+					startDate: new Date()
+				});
+				$('#datepicker').on("changeDate", function() {
+					$('#date_event').val(
+							$('#datepicker').datepicker('getFormattedDate')
+					);
+				});
+				$('#datepicker .datepicker th.prev').html('<img src=\'img/icons/arrow-left-gray.png\'>');
+				$('#datepicker .datepicker th.next').html('<img src=\'img/icons/arrow-right-gray.png\'>');
+			  $('#content-wrapper').click(function () {
+			    $('#navbar').removeClass('navbar-shown');
+			  });
+			  $('#navbar-trigger').click(function () {
+			    $('#navbar').addClass('navbar-shown');
+			  });
+		});
+	</script>
+</body>
+</html>

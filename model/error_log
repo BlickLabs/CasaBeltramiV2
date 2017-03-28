@@ -1,0 +1,29 @@
+[17-Jun-2016 15:01:08 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: details in /home/casabelt/public_html/model/contacto_mail.php on line 15
+[17-Jun-2016 15:03:59 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: details in /home/casabelt/public_html/model/contacto_mail.php on line 15
+[17-Jun-2016 15:15:17 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: details in /home/casabelt/public_html/model/contacto_mail.php on line 15
+[17-Jun-2016 20:34:26 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: details in /home/casabelt/public_html/model/contacto_mail.php on line 15
+[17-Jun-2016 22:34:22 America/Argentina/Buenos_Aires] PHP Parse error:  syntax error, unexpected 'to' (T_STRING), expecting ')' in /home/casabelt/public_html/model/contacto_mail.php on line 42
+[20-Jun-2016 18:46:55 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: name in /home/casabelt/public_html/model/contacto_mail.php on line 7
+[20-Jun-2016 18:46:55 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/casabelt/public_html/model/contacto_mail.php on line 8
+[20-Jun-2016 18:46:55 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: phone_number in /home/casabelt/public_html/model/contacto_mail.php on line 9
+[20-Jun-2016 18:46:55 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: type_event in /home/casabelt/public_html/model/contacto_mail.php on line 10
+[20-Jun-2016 18:46:55 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: date_event in /home/casabelt/public_html/model/contacto_mail.php on line 11
+[20-Jun-2016 18:46:55 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: service in /home/casabelt/public_html/model/contacto_mail.php on line 12
+[20-Jun-2016 18:46:55 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: persons in /home/casabelt/public_html/model/contacto_mail.php on line 13
+[20-Jun-2016 18:46:55 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: details in /home/casabelt/public_html/model/contacto_mail.php on line 15
+[05-Aug-2016 12:01:31 America/Argentina/Buenos_Aires] PHP Fatal error:  Uncaught exception 'Mailgun\Connection\Exceptions\MissingEndpoint' with message 'The endpoint you've tried to access does not exist. Check your URL.' in /home/casabelt/public_html/vendor/mailgun/mailgun-php/src/Mailgun/Connection/RestClient.php:133
+Stack trace:
+#0 /home/casabelt/public_html/vendor/mailgun/mailgun-php/src/Mailgun/Connection/RestClient.php(90): Mailgun\Connection\RestClient->responseHandler(Object(Guzzle\Http\Message\Response))
+#1 /home/casabelt/public_html/vendor/mailgun/mailgun-php/src/Mailgun/Mailgun.php(80): Mailgun\Connection\RestClient->post('mg.miemma.com/m...', Array, Array)
+#2 /home/casabelt/public_html/vendor/mailgun/mailgun-php/src/Mailgun/Mailgun.php(36): Mailgun\Mailgun->post('mg.miemma.com/m...', Array, Array)
+#3 /home/casabelt/public_html/model/contacto_mail.php(79): Mailgun\Mailgun->sendMessage('mg.miemma.com', Array)
+#4 {main}
+  thrown in /home/casabelt/public_html/vendor/mailgun/mailgun-php/src/Mailgun/Connection/RestClient.php on line 133
+[26-Jan-2017 00:13:45 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: name in /home/casabelt/public_html/model/contacto_mail.php on line 7
+[26-Jan-2017 00:13:45 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/casabelt/public_html/model/contacto_mail.php on line 8
+[26-Jan-2017 00:13:45 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: phone_number in /home/casabelt/public_html/model/contacto_mail.php on line 9
+[26-Jan-2017 00:13:45 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: type_event in /home/casabelt/public_html/model/contacto_mail.php on line 10
+[26-Jan-2017 00:13:45 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: date_event in /home/casabelt/public_html/model/contacto_mail.php on line 11
+[26-Jan-2017 00:13:45 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: service in /home/casabelt/public_html/model/contacto_mail.php on line 12
+[26-Jan-2017 00:13:45 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: persons in /home/casabelt/public_html/model/contacto_mail.php on line 13
+[26-Jan-2017 00:13:45 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: details in /home/casabelt/public_html/model/contacto_mail.php on line 15

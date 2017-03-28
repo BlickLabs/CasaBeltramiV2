@@ -1,0 +1,72 @@
+div.layout-a.meta-box div.meta-box{ float:none; padding:5px; border:1px solid #ededed; margin:1px; clear:both; height:auto; width:auto; background: #ffffff; }
+div.layout-a.meta-box div.meta-box.meta-docs .info-column a{ position:absolute; padding:7px; }
+
+div.sort-conference-program.layout-a.meta-box div.meta-box.meta-program{ float:none; padding:5px; border:1px solid #ededed; margin:1px; clear:both; height:auto; width:auto; background: #ffffff; }
+div#box_conference_program{ margin-top:20px; }
+
+.large-box div.label{ float:left; width:250px; padding:8px 10px; }
+.large-box div.label label{ font:bold 16px sans-serif,Arial,Tahoma,"Trebuchet MS"; }
+.large-box div.fields{ float:left; width:350px; padding:5px 10px; }
+.large-box div.fields input[type="text"],
+.large-box div.fields textarea{ width:350px; padding:3px; font-size:14px; height:30px; }
+
+/* multitple record for side meta box*/
+div.side-meta-box-multiple-records{ padding:10px 8px 0px 8px; border:1px solid #cdcdcd; margin-bottom:1px; }
+div.side-meta-box-multiple-records div.icon{ float:left; margin:0px 5px 5px 0px; padding:5px; background:#fff; border:1px solid #cdcdcd; }
+/* input style for side meta meta box */
+.box-medium{ width:200px; }
+.box-large{ width:251px; }
+.box-small{ width:170px; }
+
+.attach_alert{ color:#006600; float:right; padding-right:10px; }
+
+iframe.upload_iframe{ width: 100%; height:350px !important;}
+
+/* Post rating meta box styling */
+#rating-items > li{
+	display: block;
+}
+#rating-items > li > .sortable-meta-element{
+	height: 35px;
+	background: #5B6263;
+	border-radius: 4px;
+	font-size: 16px;
+	line-height: 35px;
+	padding: 0 15px;
+	font-weight: 300;
+	color: #FFF;
+	cursor: ns-resize;
+}
+#rating-items > li > .sortable-meta-element .tab-arrow{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	border: 2px solid #FFF;
+	line-height: 16px;
+	text-align: center;
+	font-size: 23px;
+	margin-right: 10px;
+}
+#rating-items > li > table{
+	font-size: 14px;
+	width: 100%;
+	background: #FFF;
+	margin-bottom: 30px;
+	padding: 15px;
+	color: #767D7E;
+	text-transform: uppercase;
+	font-size: 12px;;
+}
+#rating-items > li > table td{
+	padding: 8px;
+}
+#rating-items > li > table tr > td:first-child{
+	
+}
+#rating-items > li > table input[type="text"]{
+	padding: 7px 5px;
+}
+#rating-items > li > table select{
+	width: 100%;
+}
