@@ -40,7 +40,13 @@
         }
         $query1 = "INSERT INTO content (tittle,route,description,status,creation_date) VALUES('$title','$filename','$sd',$st,'$cd')";
         $ingresar = mysqli_query($mysqli, $query1);
-        move_uploaded_file($_FILES['foto']['tmp_name'], 'album/' . $filename);
+	//move_uploaded_file($_FILES['foto']['tmp_name'], 'album/' . $filename);// comented by EnriqueLC 28/04/2017
+	//$target_path = __DIR__ . '/uploaded_images/';
+	if (move_uploaded_file($_FILES['foto']['tmp_name'], 'album/' . $filename)) {
+    		echo "Uploaded";
+	} else {
+		throw new Exception('División por cero.');
+	}
         $id_img = mysqli_insert_id($mysqli); //obtenemos el id del ultimo insert realizado
         // $mysqli->close(); //cerramos la conexió del primer query
         $query2 = "";
